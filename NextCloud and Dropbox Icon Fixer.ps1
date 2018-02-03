@@ -2,11 +2,11 @@
 #Will not work if Next/Onecloud is not installed.
 $confirmation = Read-Host 'This script will not work without Nextcloud/Onecloud installed. Are you Sure You Want To Proceed? (y/n)'
     if ($confirmation -eq 'y') {
-        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCError' -NewName "     OCError"
-        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCOK' -NewName "     OCOK"
-        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCOKShared' -NewName "     OCOKShared"
-        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCSync' -NewName "     OCSync"
-        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCWarning' -NewName "     OCWarning"
+        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCError' -NewName "     OCError" -whatif
+        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCOK' -NewName "     OCOK" -whatif
+        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCOKShared' -NewName "     OCOKShared" -whatif
+        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCSync' -NewName "     OCSync" -whatif
+        Rename-Item -Force 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\  OCWarning' -NewName "     OCWarning" -whatif
 
         Write-Host ''
         Write-Host ''
